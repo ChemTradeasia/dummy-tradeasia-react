@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-header-bg: #354fae;
+  --color-text-dark: #0a205c;
+  --color-light-blue: #6f96d1;
+  --color-hover-bg: #fefaef;
+  --color-input-border: #e5e7e9;
+  --color-gray-text: #5d5d5d;
+  --font-sans: "Poppins", Arial, sans-serif !important;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+  width: 100%;
+
+  @media (width >= 576px)  { max-width: 540px; }
+  @media (width >= 768px)  { max-width: 720px; }
+  @media (width >= 992px)  { max-width: 960px; }
+  @media (width >= 1200px) { max-width: 1140px; }
+  @media (width >= 1400px) { max-width: 1320px; }
+}
+
+@layer base {
+  html, body, * {
+    font-family: "Poppins", Arial, sans-serif !important;
+  }
+
+  body {
+    margin: 0;
+    color: var(--color-gray-text);
+    background-color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-dark);
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h2, h3 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 66px;
+    color: #0a205c;
+  }
+}
