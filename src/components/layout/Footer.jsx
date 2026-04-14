@@ -28,13 +28,13 @@ export default function Footer() {
 
             <div className="md:col-span-5">
               <p className="text-white font-semibold mb-3">Tradeasia International Pte. Ltd</p>
-              <p className="text-white text-md mb-1">Keck Seng Tower</p>
-              <p className="text-white text-md mb-1">133 Cecil Street #12-03</p>
-              <p className="text-white text-md mb-3">Singapore, 069535, Republic of Singapore.</p>
+              <p className="text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] lg:mb-0 md:mb-1">Keck Seng Tower</p>
+              <p className="text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] lg:mb-0 md:mb-1">133 Cecil Street #12-03</p>
+              <p className="text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] lg:mb-0 md:mb-3">Singapore, 069535, Republic of Singapore.</p>
 
               <a
                 href="mailto:contact@chemtradeasia.com"
-                className="flex items-center gap-3 text-white text-md hover:text-white transition-colors mb-2"
+                className="flex items-center gap-3 text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] hover:text-white transition-colors mb-2"
               >
                 <img
                   src="https://cdn.chemtradeasia.com/chemtradeasia-new/email.webp"
@@ -46,7 +46,7 @@ export default function Footer() {
 
               <a
                 href="tel:+65-62276365"
-                className="flex items-center gap-3 text-white text-md hover:text-white transition-colors"
+                className="flex items-center gap-3 text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] hover:text-white transition-colors"
               >
                 <img
                   src="https://cdn.chemtradeasia.com/chemtradeasia-new/call.webp"
@@ -58,13 +58,13 @@ export default function Footer() {
             </div>
 
             <div className="md:col-span-3">
-              <p className="text-white font-semibold mb-3">Informations</p>
-              <ul className="space-y-1">
+              <p className="text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] font-semibold mb-1 md:mb-3">Informations</p>
+              <ul className="md:space-y-1 lg:space-y-0">
                 {INFO_LINKS.map(({ label, href }) => (
                   <li key={href}>
                     <a
                       href={href}
-                      className="text-white text-md hover:text-white transition-colors"
+                      className="text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] hover:text-white transition-colors"
                     >
                       {label}
                     </a>
@@ -75,7 +75,7 @@ export default function Footer() {
 
             {/* Kolom 3 — Download & Sosial Media */}
             <div className="md:col-span-4">
-              <p className="text-white font-semibold mb-3">Download Our Mobile App</p>
+              <p className="text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] font-semibold mb-3">Download Our Mobile App</p>
               <div className="flex flex-wrap gap-3 mb-6">
                 <a
                   href="https://apps.apple.com/sk/app/tradeasia/id6478198700"
@@ -103,7 +103,7 @@ export default function Footer() {
                 </a>
               </div>
 
-              <p className="text-white font-semibold mb-3">Connect With Us</p>
+              <p className="text-white text-[14px] lg:text-[16px] md:text-md leading-[25px] md:leading-[29px] font-semibold mb-3">Connect With Us</p>
               <div className="flex items-center gap-3">
                 <a
                   href="https://facebook.com/tradeasia"

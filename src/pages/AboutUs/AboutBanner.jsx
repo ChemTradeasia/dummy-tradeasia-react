@@ -8,7 +8,7 @@ export default function AboutBanner() {
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#354fae] via-[#123c6980] to-transparent md:w-full" />
       <div className="container relative z-10">
-        <h1 className="text-white md:text-[50px] sm:text-[30px] font-semibold">About Us</h1>
+        <h1 className="text-white text-[30px] md:text-[50px] sm:text-[30px] font-semibold">About Us</h1>
       </div>
     </div>
   );

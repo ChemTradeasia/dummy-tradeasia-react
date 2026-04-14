@@ -47,26 +47,24 @@ export default function AboutValues() {
   return (
     <section className="py-16 md:py-24">
       <div className="container">
-        <h2 className="text-[var(--color-text-dark)] text-3xl md:text-4xl font-bold mb-12 text-center">Our Values</h2>
+        <h2 className="text-[var(--color-text-dark)] text-3xl md:text-[44px] font-semibold mb-13 text-center">Our Values</h2>
         
-        {/* Large Value Illustration */}
         <div className="flex justify-center mb-16">
           <img 
             src="https://cdn.chemtradeasia.com/product-websites/soda-ash-dense/our-value.webp" 
             alt="Tradeasia Core Values Diagram" 
-            className="max-w-full md:max-w-3xl h-auto"
+            className="max-w-full md:max-w-5xl h-auto"
           />
         </div>
 
-        {/* Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {APP_VALUES.map((val) => (
-            <div key={val.id} className="text-center md:text-left">
-              <div className="inline-block md:block mb-4 text-[var(--color-header-bg)]">
-                <val.Icon className="w-16 h-16 mx-auto md:mx-0" />
+            <div key={val.id} className="text-center border-2 border-[var(--color-light-blue)] p-[30px]">
+              <div className="inline-block mb-3 text-[var(--color-header-bg)]">
+                <val.Icon className="w-16 h-16 mx-auto" />
               </div>
-              <h5 className="text-[var(--color-text-dark)] text-xl font-bold mb-3">{val.title}</h5>
-              <p className="text-[var(--color-gray-text)] leading-relaxed">
+              <h5 className="text-[var(--color-light-blue)] text-[18px] md:text-[24px] font-semibold mb-3">{val.title}</h5>
+              <p className="text-[var(--color-gray-text)] text-[14px] md:leading-[29px] my-[10px]">
                 {val.desc}
               </p>
             </div>

@@ -24,17 +24,39 @@
 }
 
 @layer base {
-  html, body, * {
+  h1, h2, h3, h4, h5, h6,
+  p, button, input, textarea, select, option,
+  span, ul, li {
     font-family: "Poppins", Arial, sans-serif !important;
+    margin-bottom: 0;
   }
 
   body {
     margin: 0;
     color: var(--color-gray-text);
     background-color: #fff;
+    font-family: "Poppins", Arial, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 50px;
+    line-height: 75px;
+    color: var(--color-text-dark);
+  }
+
+  h2, h3 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 66px;
+    color: var(--color-text-dark);
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
     color: var(--color-text-dark);
   }
 
@@ -42,12 +64,21 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+    color: var(--color-text-dark);
   }
 
-  h2, h3 {
+  h6 {
     font-weight: 600;
-    font-size: 44px;
-    line-height: 66px;
-    color: #0a205c;
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--color-light-blue);
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--color-gray-text);
+    margin-bottom: 0;
   }
 }

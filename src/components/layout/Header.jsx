@@ -71,7 +71,7 @@ export default function Header() {
               <img
                 src="https://cdn.chemtradeasia.com/chemtradeasia-new/tradeasia-logo-white.webp"
                 alt="Tradeasia International"
-                className="w-[163px] h-auto"
+                className="w-[108px] h-[40px] lg:w-[163px] lg:h-auto object-contain"
               />
             </a>
           </div>
@@ -121,8 +121,8 @@ export default function Header() {
           </nav>
 
           {/* Right: Search, Globe, Sign In, Contact */}
-          <div className="col-span-6 lg:col-span-4 flex items-center justify-end xl:gap-5 lg:gap-2.5 md:gap-5 h-20 sm:gap-5">
-            <div className="flex items-center border-r-2 border-white xl:pr-5 lg:pr-2.5 md:pr-5 sm:pr-5">
+          <div className="col-span-6 lg:col-span-4 flex items-center justify-end gap-4 md:gap-5 lg:gap-2.5 xl:gap-5 h-20">
+            <div className="flex items-center border-r-2 border-white pr-4 md:pr-5 lg:pr-2.5 xl:pr-5">
               <button className="text-white hover:opacity-80" onClick={() => setIsSearchOpen(!isSearchOpen)}>
                 <SearchIcon className="w-6 h-6 cursor-pointer" />
               </button>
@@ -164,7 +164,7 @@ export default function Header() {
               <img
                 src="https://cdn.chemtradeasia.com/chemtradeasia-new/tradeasia-logo-white.webp"
                 alt="Tradeasia International"
-                className="w-[140px] h-[50px]"
+                className="w-[108px] h-[40px] object-contain"
               />
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -177,7 +177,7 @@ export default function Header() {
             {/* Sidebar Body */}
             <div className="flex-1 overflow-y-auto">
               {sidebarView === 'main' && (
-                <ul className="flex flex-col px-[40px] list-none m-0">
+                <ul className="flex flex-col px-[20px] md:px-[40px] list-none m-0">
                   {NAV_LINKS.map((item) => {
                     if (item.type === 'dropdown') {
                       return (
@@ -213,7 +213,7 @@ export default function Header() {
                   <div key={item.label} className="flex flex-col">
                     <button
                       onClick={() => setSidebarView('main')}
-                      className="flex items-center gap-2 bg-gray-100 px-6 py-4 text-base font-semibold text-[var(--color-text-dark)] border-b border-gray-200 hover:bg-gray-200 w-full text-left"
+                      className="flex items-center gap-2 bg-gray-100 px-[20px] py-4 text-base font-semibold text-[var(--color-text-dark)] border-b border-gray-200 hover:bg-gray-200 w-full text-left"
                     >
                       <AngleLeftIcon /> Back
                     </button>
@@ -222,7 +222,7 @@ export default function Header() {
                         <li key={child.href} className="p-0">
                           <a
                             href={child.href}
-                            className="block px-6 py-4 border-b border-gray-100 text-[var(--color-text-dark)] font-medium hover:bg-gray-50"
+                            className="block px-[20px] py-4 border-b border-gray-100 text-[var(--color-text-dark)] font-medium hover:bg-gray-50"
                           >
                             {child.label}
                           </a>
@@ -235,16 +235,16 @@ export default function Header() {
             </div>
 
             {/* Sidebar Footer */}
-            <div className="px-[40px] flex pb-5 gap-2">
+            <div className="px-[20px] flex pb-5 gap-2 mx-auto md:m-0">
               {!user && (
                 <a
                   href="/login"
-                  className="flex justify-center items-center w-full bg-white border-2 border-[var(--color-light-blue)] text-[var(--color-light-blue)] font-medium text-base rounded-full px-6 py-2.5 hover:bg-[var(--color-light-blue)] hover:text-white transition-all text-center"
+                  className="flex justify-center items-center md:w-full bg-white border-2 border-[var(--color-light-blue)] text-[var(--color-light-blue)] font-medium text-[14px] leading-[25px] rounded-full px-6 py-2.5 hover:bg-[var(--color-light-blue)] hover:text-white transition-all text-center"
                 >
                   Sign In
                 </a>
               )}
-              <button className="w-full bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] text-white font-medium text-base rounded-full px-6 py-2.5 cursor-pointer hover:bg-white hover:text-[var(--color-light-blue)] transition-all">
+              <button className="md:w-full bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] text-white font-medium text-[14px] leading-[25px] rounded-full px-6 py-2.5 cursor-pointer hover:bg-white hover:text-[var(--color-light-blue)] transition-all">
                 Contact Us
               </button>
             </div>

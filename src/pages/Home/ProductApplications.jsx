@@ -49,7 +49,13 @@ export default function ProductApplications() {
 
   useEffect(() => {
     const handleResize = () => {
-      const newVisible = window.innerWidth <= 1024 ? 2 : 3;
+      let newVisible = 3;
+      if (window.innerWidth <= 640) {
+        newVisible = 1;
+      } else if (window.innerWidth <= 1024) {
+        newVisible = 2;
+      }
+
       if (newVisible !== visibleCount) {
         setVisibleCount(newVisible);
         setOffset(newVisible);
@@ -132,9 +138,9 @@ export default function ProductApplications() {
         <div className="relative z-10">
           
           <h5 className="text-white text-center text-[18px] mb-0 md:text-[24px] md:mb-5">Product Applications</h5>
-          <h3 className="text-white text-center text-[34px] mb-7 md:text-[44px] md:mb-12">Uses of Soda Ash Dense</h3>
+          <h3 className="text-white text-center text-[18px] sm:text-[34px] sm:mb-7 md:text-[44px] md:mb-12">Uses of Soda Ash Dense</h3>
 
-          <div className="relative mt-12.5 sm:mt-0">
+          <div className="relative md:mt-12.5 mt-0">
 
           <button
             onClick={goPrev}

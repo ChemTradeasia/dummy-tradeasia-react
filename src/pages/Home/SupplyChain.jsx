@@ -28,7 +28,7 @@ export default function SupplyChain() {
   return (
     <section className="py-[50px] md:py-[80px]">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center sm:gap-0"> 
+        <div className="grid grid-cols-1 md:grid-cols-2 mdgap-10 items-center gap-0"> 
           <div>
             <img
               src="https://cdn.chemtradeasia.com/product-websites/supply-chain-img.webp"
@@ -37,14 +37,14 @@ export default function SupplyChain() {
             />
           </div>
           <div className="pl-0 mt-8 md:pl-8 md:mt-0">
-            <h3 className="mb-3 text-[28px] md:text-[44px] leading-tight md:leading-normal sm:text-[18px]">Our Strength as Your Business Partner</h3>
+            <h3 className="mb-3 text-[18px] md:text-[44px] leading-tight md:leading-normal sm:text-[18px]">Our Strength as Your Business Partner</h3>
 
             {STRENGTHS.map(({ id, title, description, Icon }, index) => (
               <div
                 key={id}
-                className="flex gap-4 md:gap-5 items-center py-4 md:py-5.5 border-b border-gray-200 md:items-center sm:items-start"
+                className="flex gap-4 md:gap-5 py-4 md:py-5.5 border-b border-gray-200 md:items-center items-start"
               >
-                <span className="shrink-0 flex items-center justify-center sm:items-start">
+                <span className="shrink-0 flex items-start md:items-center justify-center ">
                   <Icon className="w-[45px] h-[45px] md:w-[60px] md:h-[60px] sm:w-[40px] sm:h-[40px]" />
                 </span>
                 <div>

@@ -24,30 +24,33 @@ const WHY_ITEMS = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 md:py-24 bg-[var(--color-hover-bg)]">
+    <section className="py-1 md:py-2">
       <div className="container">
-        <div className="max-w-3xl mb-12">
-          <h5 className="text-[var(--color-light-blue)] font-semibold text-lg md:text-xl mb-2">Why Choose Us?</h5>
-          <h3 className="text-[var(--color-text-dark)] text-3xl md:text-4xl font-bold leading-tight">
-            The Prime Choice for Your Chemical Solutions
-          </h3>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {WHY_ITEMS.map((item) => (
-            <div 
-              key={item.id} 
-              className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all group"
-            >
-              <div className="mb-6 text-[var(--color-header-bg)]">
-                <item.Icon className="w-14 h-14" />
+        <div className="bg-[var(--color-hover-bg)] p-[30px] md:p-[50px]">
+          <div className="mb-[40px] mx-auto text-center">
+            <h5 className="text-[var(--color-light-blue)] font-semibold text-[18px] md:text-[24px] leading-[32px] md:leading-[36px]">Why Choose Us?</h5>
+            <h3 className="text-[var(--color-text-dark)] text-[18px] md:text-[44px] leading-[32px] md:leading-[66px]">
+              The Prime Choice for Your Chemical Solutions
+            </h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {WHY_ITEMS.map((item) => (
+              <div 
+                key={item.id} 
+                className="bg-white p-8 text-center  transition-all group"
+              >
+                <div className="text-[var(--color-light-blue)] inline-block">
+                  <item.Icon className="w-14 h-14" />
+                </div>
+                <h5 className="text-[var(--color-light-blue)] text-[18px] md:text-[24px] leading-[32px] md:leading-[36px] font-semibold mt-[20px] mb-[4px]">{item.title}</h5>
+                <p className="text-[var(--color-gray-text)] text-[14px] md:text-[16px] leading-[25px] md:leading-[29px]">
+                  {item.desc}
+                </p>
               </div>
-              <h5 className="text-[var(--color-text-dark)] text-xl font-bold mb-4">{item.title}</h5>
-              <p className="text-[var(--color-gray-text)] leading-relaxed">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
+
         </div>
       </div>
     </section>
