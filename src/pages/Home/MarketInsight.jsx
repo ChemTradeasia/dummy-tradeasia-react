@@ -21,7 +21,7 @@ export default function MarketInsight() {
 
         {/* Placeholder saat belum ada data */}
         <div className="text-center py-10">
-          <h5 className="text-[var(--color-light-blue)] text-[18px] sm:text-[24px] md:text-[44px]">
+          <h5 className="text-[var(--color-light-blue)] text-[18px] sm:text-[24px] md:text-[24px]">
             Stay tune for our updated market insights
           </h5>
         </div>

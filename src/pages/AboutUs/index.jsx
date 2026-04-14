@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import SEO from '../../components/SEO';
-import Breadcrumb from './Breadcrumb';
-import AboutBanner from './AboutBanner';
+import Breadcrumb from '../../components/common/Breadcrumb';
+import PageBanner from '../../components/common/PageBanner';
 import AboutOverview from './AboutOverview';
 import VisionMission from './VisionMission';
 import AboutValues from './AboutValues';
@@ -21,7 +21,10 @@ export default function AboutUsPage() {
         keywords: "about tradeasia, chemical distributor, supply chain solutions"
       }} />
 
-      <AboutBanner />
+      <PageBanner 
+        title="About Us" 
+        backgroundImage="https://cdn.chemtradeasia.com/product-websites/banner/about-us-bn.webp" 
+      />
       <Breadcrumb items={[{ label: 'About Us' }]} />
       
       <AboutOverview />

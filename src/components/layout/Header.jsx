@@ -142,9 +142,12 @@ export default function Header() {
                 Sign In
               </a>
             )}
-            <button className="hidden lg:block whitespace-nowrap bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] text-white font-normal text-base rounded-full px-[25px] py-[11px] cursor-pointer hover:bg-white hover:text-[var(--color-light-blue)] transition-all">
+            <a 
+              href="/contact-us"
+              className="hidden lg:block whitespace-nowrap bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] text-white font-normal text-base rounded-full px-[25px] py-[11px] cursor-pointer hover:bg-white hover:text-[var(--color-light-blue)] transition-all"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
 
         </div>
@@ -244,9 +247,12 @@ export default function Header() {
                   Sign In
                 </a>
               )}
-              <button className="md:w-full bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] text-white font-medium text-[14px] leading-[25px] rounded-full px-6 py-2.5 cursor-pointer hover:bg-white hover:text-[var(--color-light-blue)] transition-all">
+              <a 
+                href="/contact-us"
+                className="md:w-full bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] text-white font-medium text-[14px] leading-[25px] rounded-full px-6 py-2.5 cursor-pointer hover:bg-white hover:text-[var(--color-light-blue)] transition-all text-center"
+              >
                 Contact Us
-              </button>
+              </a>
             </div>
 
           </div>

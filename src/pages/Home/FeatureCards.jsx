@@ -33,8 +33,8 @@ export default function FeatureCards() {
                 <div className="flex justify-center mb-4">
                   <Icon />
                 </div>
-                <h1 className="font-semibold text-[14px] leading-[26px] sm:text-md md:text-md mt-[20px] mb-[10px] text-[var(--color-light-blue)]">{feature.title}</h1>
-                <p className="text-gray-600 text-[14px] leading-[26px] md:leading-[29px] font-normal">{feature.description}</p>
+                <h1 className="font-semibold text-[14px] leading-[26px] sm:text-md md:text-md lg:text-[16px] mt-[20px] mb-[10px] text-[var(--color-light-blue)]">{feature.title}</h1>
+                <p className="text-gray-600 text-[14px] lg:text-[16px] leading-[26px] md:leading-[29px] font-normal">{feature.description}</p>
               </div>
             );
           })}

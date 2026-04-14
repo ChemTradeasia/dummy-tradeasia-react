@@ -3,6 +3,8 @@ import MainLayout from './components/layout/MainLayout';
 import HomePage from './pages/Home';
 import AboutUsPage from './pages/AboutUs';
 import ProductsPage from './pages/Products';
+import OurLocationPage from './pages/OurLocation';
+import ContactUsPage from './pages/ContactUs';
 
 /**
  * Route configuration.
@@ -12,6 +14,8 @@ const ROUTES = [
   { path: '/',           component: <HomePage /> },
   { path: '/about-us',   component: <AboutUsPage /> },
   { path: '/products',   component: <ProductsPage /> },
+  { path: '/our-location', component: <OurLocationPage /> },
+  { path: '/contact-us',   component: <ContactUsPage /> },
 ];
 
 function NotFoundPage() {
