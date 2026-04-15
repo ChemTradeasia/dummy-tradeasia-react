@@ -1,4 +1,3 @@
-import React from 'react';
 import SEO from '../../components/SEO';
 import Breadcrumb from '../../components/common/Breadcrumb';
 import PageBanner from '../../components/common/PageBanner';
@@ -28,13 +27,10 @@ export default function ContactUsPage() {
       </div>
 
       <section className="container mx-auto mt-20">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          {/* Form Side - Column 7 in Bootstrap roughly maps to 7/12 width */}
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-13.5">
           <div className="w-full lg:w-[60%]">
             <ContactForm />
           </div>
-
-          {/* Info Side - Column 4 in Bootstrap roughly maps to 4/12 width */}
           <div className="w-full lg:w-[40%]">
             <ContactInfo />
           </div>

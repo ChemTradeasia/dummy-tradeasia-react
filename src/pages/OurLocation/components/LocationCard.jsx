@@ -1,4 +1,3 @@
-import React from 'react';
 import { EmailIcon, PhoneIcon } from '../../../components/icons';
 
 export default function LocationCard({ location }) {

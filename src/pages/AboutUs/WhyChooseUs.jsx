@@ -1,4 +1,3 @@
-import React from 'react';
 import { WhyChoose1, WhyChoose2, WhyChoose3 } from '../../components/icons/AboutUs';
 
 const WHY_ITEMS = [

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { LOCATIONS } from '../../../constants/locations';
 import { EmailIcon, PhoneIcon, AngleDownIcon } from '../../../components/icons';
 

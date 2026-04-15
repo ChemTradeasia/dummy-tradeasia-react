@@ -1,4 +1,3 @@
-// import React from 'react';
 import { AngleRightIcon } from '../../components/icons';
 
 export default function AboutVideo() {
@@ -6,7 +5,7 @@ export default function AboutVideo() {
     <section className="py-16 md:py-24">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-5">
+          <div className="md:col-span-6">
             <h3 className="text-[var(--color-text-dark)] text-[18px] md:text-[44px] leading-[32px] md:leading-[66px] font-semibold mb-[20px]">
               We are Tradeasia
             </h3>
@@ -26,7 +25,7 @@ export default function AboutVideo() {
           
           <div className="md:col-span-1 hidden md:block"></div>
           
-          <div className="md:col-span-6">
+          <div className="md:col-span-5">
             <div className="relative aspect-video overflow-hidden">
               <iframe 
                 src="https://www.youtube.com/embed/wVjiIWLGdJ8?si=Zfrgq2PVsfD0J7Ug" 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import SEO from '../../components/SEO';
 import Breadcrumb from '../../components/common/Breadcrumb';
 import PageBanner from '../../components/common/PageBanner';

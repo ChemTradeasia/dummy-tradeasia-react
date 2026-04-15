@@ -1,4 +1,3 @@
-import React from 'react';
 import SEO from '../../components/SEO';
 import PageBanner from '../../components/common/PageBanner';
 import Breadcrumb from '../../components/common/Breadcrumb';
@@ -19,18 +18,18 @@ export default function OurLocationPage() {
 
       {/* Hero Banner */}
       <PageBanner 
-        title="Our Location" 
+        title="Our Locations" 
         backgroundImage="https://cdn.chemtradeasia.com/product-websites/banner/our-location-bn.webp" 
       />
 
       {/* Breadcrumb Path */}
-      <Breadcrumb items={[{ label: 'Our Location' }]} />
+      <Breadcrumb items={[{ label: 'Our Locations' }]} />
 
-      <main className="container pt-12 md:pt-20">
+      <main className="container pt-12 md:pt-15">
         {/* Section Heading */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-[var(--color-text-dark)] text-[22px] md:text-[44px] font-semibold leading-tight max-w-[800px] mx-auto">
-            Tradeasia Is Available Practically Throughout The World
+          <h2 className="text-[var(--color-text-dark)] text-[22px] md:text-[44px] font-semibold leading-[66px] max-w-[1000px] mx-auto">
+            Discover Our Global Network and Accessible Locations
           </h2>
         </div>
 

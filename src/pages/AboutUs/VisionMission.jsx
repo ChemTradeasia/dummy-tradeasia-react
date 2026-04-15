@@ -1,4 +1,3 @@
-import React from 'react';
 import { VisionIcon, MissionIcon } from '../../components/icons/AboutUs';
 
 export default function VisionMission() {

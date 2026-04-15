@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   ValueIcon1, ValueIcon2, ValueIcon3, 
   ValueIcon4, ValueIcon5, ValueIcon6 
@@ -45,7 +44,7 @@ const APP_VALUES = [
 
 export default function AboutValues() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-12">
       <div className="container">
         <h2 className="text-[var(--color-text-dark)] text-3xl md:text-[44px] font-semibold mb-13 text-center">Our Values</h2>
         
@@ -53,7 +52,7 @@ export default function AboutValues() {
           <img 
             src="https://cdn.chemtradeasia.com/product-websites/soda-ash-dense/our-value.webp" 
             alt="Tradeasia Core Values Diagram" 
-            className="max-w-full md:max-w-5xl h-auto"
+            className="max-w-full md:max-w-4xl lg:max-w-5xl h-auto"
           />
         </div>
 
@@ -64,7 +63,7 @@ export default function AboutValues() {
                 <val.Icon className="w-16 h-16 mx-auto" />
               </div>
               <h5 className="text-[var(--color-light-blue)] text-[18px] md:text-[24px] font-semibold mb-3">{val.title}</h5>
-              <p className="text-[var(--color-gray-text)] text-[14px] md:leading-[29px] my-[10px]">
+              <p className="text-[var(--color-gray-text)] text-[14px] md:text-[16px] md:leading-[29px] my-[10px]">
                 {val.desc}
               </p>
             </div>

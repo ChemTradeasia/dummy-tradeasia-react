@@ -1,5 +1,3 @@
-// import React from 'react';
-
 export default function AboutOverview() {
   return (
     <section className="py-10 sm:py-20 md:py-20">
