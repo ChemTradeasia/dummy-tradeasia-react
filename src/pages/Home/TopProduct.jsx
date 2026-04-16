@@ -26,7 +26,7 @@ export default function TopProduct() {
               </p>
               <a
                 href="/products"
-                className="inline-block px-5 py-2 text-[14px] mt-4 bg-[var(--color-light-blue)] text-white font-medium sm:px-5 sm:py-2.5 rounded-full md:px-7 md:py-3 md:text-[16px] hover:bg-[var(--color-header-bg)] transition-all sm:text-[14px] "
+                className="inline-block px-5 py-2 text-[14px] mt-4 bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] text-white font-medium sm:px-5 sm:py-2.5 rounded-full md:px-7 md:py-3 md:text-[16px] hover:bg-white hover:text-[var(--color-light-blue)] transition-all active:scale-[0.95] shadow-lg shadow-[var(--color-light-blue)]/20"
               >
                 Explore Our Product
               </a>
