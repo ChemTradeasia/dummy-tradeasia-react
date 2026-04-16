@@ -1,19 +1,41 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import MainLayout from './components/layout/MainLayout';
 import HomePage from './pages/Home';
 import AboutUsPage from './pages/AboutUs';
 import ProductsPage from './pages/Products';
+import ProductDetailPage from './pages/Products/ProductDetail';
 import OurLocationPage from './pages/OurLocation';
 import ContactUsPage from './pages/ContactUs';
 
 /**
+ * Custom Route Matcher
+ * Parses paths like /products/:slug and returns params.
+ */
+function matchRoute(routePath, currentPath) {
+  const routeParts = routePath.split('/').filter(Boolean);
+  const currentParts = currentPath.split('/').filter(Boolean);
+
+  if (routeParts.length !== currentParts.length) return null;
+
+  const params = {};
+  for (let i = 0; i < routeParts.length; i++) {
+    if (routeParts[i].startsWith(':')) {
+      params[routeParts[i].slice(1)] = currentParts[i];
+    } else if (routeParts[i] !== currentParts[i]) {
+      return null;
+    }
+  }
+  return params;
+}
+
+/**
  * Route configuration.
- * Tambahkan halaman baru di sini — cukup daftarkan path dan component-nya.
  */
 const ROUTES = [
   { path: '/',           component: <HomePage /> },
   { path: '/about-us',   component: <AboutUsPage /> },
   { path: '/products',   component: <ProductsPage /> },
+  { path: '/products/:slug', component: <ProductDetailPage /> },
   { path: '/our-location', component: <OurLocationPage /> },
   { path: '/contact-us',   component: <ContactUsPage /> },
 ];
@@ -44,8 +66,20 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const route = ROUTES.find((r) => r.path === currentPath);
-  const pageContent = route ? route.component : <NotFoundPage />;
+  // Find matching route and extract params
+  let matchedParams = {};
+  const matchedRoute = ROUTES.find((route) => {
+    const params = matchRoute(route.path, currentPath);
+    if (params) {
+      matchedParams = params;
+      return true;
+    }
+    return false;
+  });
+
+  const pageContent = matchedRoute 
+    ? React.cloneElement(matchedRoute.component, { params: matchedParams }) 
+    : <NotFoundPage />;
 
   return (
     <MainLayout>

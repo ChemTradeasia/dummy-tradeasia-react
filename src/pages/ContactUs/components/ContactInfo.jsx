@@ -9,18 +9,18 @@ export default function ContactInfo() {
     <div className="flex flex-col space-y-4 lg:ml-20">
       {/* Header Section */}
       <div className="space-y-4">
-        <h2 className="text-[var(--color-text-dark)] text-[36px] font-semibold leading-tight">
+        <h2 className="text-[var(--color-text-dark)] text-[22px] lg:text-[36px] md:text-[32px] font-semibold leading-tight md:leading-none">
           Let's get in touch
         </h2>
-        <p className="text-[var(--color-gray-text)] text-[18px] leading-relaxed">
+        <p className="text-[var(--color-gray-text)] md:text-[18px] text-[14px] leading-relaxed">
           Feel free to drop us a message by filling in the form. Our representative shall contact you in due course.
         </p>
       </div>
 
       {/* Address Section */}
       <div className="">
-        <h3 className="text-[var(--color-text-dark)] text-[18px] font-semibold leading-normal">Tradeasia International Pte. Ltd</h3>
-        <address className="not-italic text-[var(--color-gray-text)] text-[18px] leading-[1.8]">
+        <h3 className="text-[var(--color-text-dark)] md:text-[18px] text-[14px] font-semibold leading-normal">Tradeasia International Pte. Ltd</h3>
+        <address className="not-italic text-[var(--color-gray-text)] md:text-[18px] text-[14px] leading-[1.8]">
           Keck Seng Tower<br />
           133 Cecil Street #12-03<br />
           Singapore, Republic of Singapore
