@@ -109,10 +109,6 @@ export default function ProductDetailPage({ params }) {
           {/* LEFT COLUMN: MAIN CONTENT */}
           <div className="w-full lg:col-span-6 custom-fs-heading mt-5">
 
-            {/* Top Specs Card */}
-
-
-            {/* Description & Application */}
             <div className="space-y-12">
               <div className="prose prose-blue max-w-none text-[#5d5d5d] leading-relaxed">
                 <h4 className="text-[var(--color-text-dark)] text-xl md:text-[32px] font-semibold mt-10 mb-4">
@@ -185,25 +181,69 @@ export default function ProductDetailPage({ params }) {
                   Inquire Now
                 </a>
               </div>
-
-              {/* Social Share Placeholder */}
-              <div className="flex items-center gap-4">
-                <span className="text-sm font-bold text-[var(--color-text-dark)]">Share:</span>
-                <div className="flex gap-2">
-                  {[1, 2, 3].map(i => (
-                    <div key={i} className="w-10 h-10 bg-[#354FAE] rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#354FAE] border-2 border-[#354FAE] transition-all">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"></path>
-                      </svg>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
+        {/* Social Share Section */}
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 pt-10 border-t border-gray-100">
+          <span className="text-xl font-semibold text-[var(--color-text-dark)]">Share This Product:</span>
+          <div className="flex flex-wrap gap-3">
+            {/* Facebook */}
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
+              target="_blank"
+              rel="nofollow noopener"
+              className="w-10 h-10 bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[var(--color-light-blue)] transition-all"
+              title="Share on Facebook"
+            >
+              <svg width="18" height="18" viewBox="0 0 1792 1792" fill="currentColor">
+                <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+              </svg>
+            </a>
 
+            {/* WhatsApp */}
+            <a
+              href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${product.name} | Tradeasia - ${typeof window !== 'undefined' ? window.location.href : ''}`)}`}
+              target="_blank"
+              rel="nofollow noopener"
+              className="w-10 h-10 bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[var(--color-light-blue)] transition-all"
+              title="Share on WhatsApp"
+            >
+              <svg width="22" height="22" viewBox="0 0 1792 1792" fill="currentColor">
+                <path d="M1113 974q13 0 97.5 44t89.5 53q2 5 2 15 0 33-17 76-16 39-71 65.5t-102 26.5q-57 0-190-62-98-45-170-118t-148-185q-72-107-71-194v-8q3-91 74-158 24-22 52-22 6 0 18 1.5t19 1.5q19 0 26.5 6.5t15.5 27.5q8 20 33 88t25 75q0 21-34.5 57.5t-34.5 46.5q0 7 5 15 34 73 102 137 56 53 151 101 12 7 22 7 15 0 54-48.5t52-48.5zm-203 530q127 0 243.5-50t200.5-134 134-200.5 50-243.5-50-243.5-134-200.5-200.5-134-243.5-50-243.5 50-200.5 134-134 200.5-50 243.5q0 203 120 368l-79 233 242-77q158 104 345 104zm0-1382q153 0 292.5 60t240.5 161 161 240.5 60 292.5-60 292.5-161 240.5-240.5 161-292.5 60q-195 0-365-94l-417 134 136-405q-108-178-108-389 0-153 60-292.5t161-240.5 240.5-161 292.5-60z" />
+              </svg>
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
+              target="_blank"
+              rel="nofollow noopener"
+              className="w-10 h-10 bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[var(--color-light-blue)] transition-all"
+              title="Share on LinkedIn"
+            >
+              <svg width="18" height="18" viewBox="0 0 1792 1792" fill="currentColor">
+                <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" />
+              </svg>
+            </a>
+
+            {/* Copy Link */}
+            <button
+              onClick={() => {
+                if (typeof window !== 'undefined') {
+                  navigator.clipboard.writeText(window.location.href);
+                  alert('Link copied to clipboard!');
+                }
+              }}
+              className="w-10 h-10 bg-[var(--color-light-blue)] border-2 border-[var(--color-light-blue)] rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[var(--color-light-blue)] transition-all cursor-pointer"
+              title="Copy Product Link"
+            >
+              <svg width="18" height="18" viewBox="0 0 1792 1792" fill="currentColor">
+                <path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" />
+              </svg>
+            </button>
+          </div>
+        </div>
         
 
       </section>
