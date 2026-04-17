@@ -19,7 +19,7 @@ export default function Breadcrumb({ items = [] }) {
                 <AngleRightIcon className="w-4 h-4" />
               </span>
               {item.href ? (
-                <a href={item.href} className="text-[var(--color-text-dark)] hover:text-[var(--color-light-blue)] transition-colors uppercase">
+                <a href={item.href} className="text-[var(--color-text-dark)] transition-colors">
                   {item.label}
                 </a>
               ) : (

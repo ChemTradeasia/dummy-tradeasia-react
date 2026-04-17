@@ -3,8 +3,8 @@ export default function ProductCard({ product }) {
     <div className="bg-white border border-gray-200 flex flex-col transition-all duration-300 hover:-translate-y-4 hover:shadow-lg group h-full">
       {/* Product Image */}
       <a href={`/products/${product.slug}`} className="block relative overflow-hidden">
-        <img 
-          src={product.image} 
+        <img
+          src={product.image}
           alt={product.name}
           className="w-full h-[180px] object-cover transition-transform duration-500"
           loading="lazy"
@@ -31,7 +31,7 @@ export default function ProductCard({ product }) {
         </a>
 
         {/* Action Button */}
-        <a 
+        <a
           href={`/contact-us?form_chosen=Request for Quotation&product_name_buying=${encodeURIComponent(product.name)}`}
           className="w-full bg-white text-[14px] md:text-[16px] border-2 border-[var(--color-light-blue)] text-[var(--color-light-blue)] font-medium py-2 sm:py-2.5 rounded-full text-center hover:bg-[var(--color-light-blue)] hover:text-white transition-all duration-300"
         >

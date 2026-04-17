@@ -16,17 +16,44 @@
   padding-inline: 0.75rem;
   width: 100%;
 
-  @media (width >= 576px)  { max-width: 540px; }
-  @media (width >= 768px)  { max-width: 720px; }
-  @media (width >= 992px)  { max-width: 960px; }
-  @media (width >= 1200px) { max-width: 1140px; }
-  @media (width >= 1400px) { max-width: 1320px; }
+  @media (width >=576px) {
+    max-width: 540px;
+  }
+
+  @media (width >=768px) {
+    max-width: 720px;
+  }
+
+  @media (width >=992px) {
+    max-width: 960px;
+  }
+
+  @media (width >=1200px) {
+    max-width: 1140px;
+  }
+
+  @media (width >=1400px) {
+    max-width: 1320px;
+  }
 }
 
 @layer base {
-  h1, h2, h3, h4, h5, h6,
-  p, button, input, textarea, select, option,
-  span, ul, li {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  button,
+  input,
+  textarea,
+  select,
+  option,
+  span,
+  ul,
+  li {
     font-family: "Poppins", Arial, sans-serif !important;
     margin-bottom: 0;
   }
@@ -46,7 +73,8 @@
     color: var(--color-text-dark);
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     font-weight: 600;
     font-size: 44px;
     line-height: 66px;
@@ -80,5 +108,17 @@
     line-height: 29px;
     color: var(--color-gray-text);
     margin-bottom: 0;
+  }
+  .custom-fs-heading h2,
+  .custom-fs-heading h3,
+  .custom-fs-heading h4,
+  .custom-fs-heading h5,
+  .custom-fs-heading h2 strong,
+  .custom-fs-heading h3 strong {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 29px;
+      color: #17234d;
+      text-align: left !important;
   }
 }

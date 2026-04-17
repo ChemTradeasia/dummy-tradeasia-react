@@ -35,24 +35,50 @@ export const PRODUCTS = [
     slug: 'caustic-soda-flakes',
     name: 'Soda Ash Dense - Bosnia',
     image: 'https://cdn.chemtradeasia.com//images/product/sodaashdense.webp',
-    cas: '1310-73-2',
-    hsCode: '2815.11.00',
+    cas: '497-19-8',
+    hsCode: '2836.20.000',
     iupac: 'Sodium Hydroxide',
-    formula: 'NaOH',
+    formula: '<p>Na<sub>2</sub>CO<sub>3</sub></p>',
     appearance: 'White Flakes',
-    commonNames: 'Lye, Caustic',
+    commonNames: 'Soda ash, dense, Sodium carbonate, Sodium carbonat',
     packaging: '25kg PP/PE bag',
     description: `
-      <p>Caustic Soda Flakes (Sodium Hydroxide) is a white solid substance in the form of flakes. It is highly alkaline and corrosive. It is easily soluble in water and releases a large amount of heat.</p>
+      <h3><strong>Brief Overview</strong></h3>
+
+      <p>Soda ash dense, an anhydrous version of sodium carbonate, is the technical term for this compound. Sodium carbonate decahydrate, a transparent, colorless crystalline substance commonly known as soda or washing soda, serves as its commercial form. Produced through the ammonia soda method (Solvay process) utilizing ammonia and carbon dioxide to treat sodium chloride, soda ash also originates from the naturally occurring mineral &#39;Trona.&#39; Its significance spans multiple industries and manufacturing processes, serving diverse industrial purposes. Particularly essential in the manufacture of flat glass, container glass, and as a crucial element in detergent production, it remains a fundamental component in various sectors.</p>
+
+      <p>&nbsp;</p>
+
+      <h3><strong>Manufacturing Process</strong></h3>
+
+      <p><strong>Mining:</strong> Sodium carbonate, present naturally as Trona (Na3HCO3CO3&middot;2H2O), is acquired by dredging from specific alkaline lakes. Continuous replenishment of salt from hot saline springs ensures the sustainability of this source, maintaining balance as long as dredging rates align with replenishment.<br />
+      <br />
+      <strong>Solvay Process: </strong>In 1861, Belgian chemist Ernest Solvay innovated a technique to convert sodium chloride into sodium carbonate using ammonia. This method utilized a tall tower: calcium carbonate (limestone) was heated at the base, releasing carbon dioxide, while a concentrated solution of sodium chloride and ammonia entered from the top. Carbon dioxide bubbling through the solution caused sodium bicarbonate to precipitate, which was then converted to sodium carbonate through heating. Ammonia was regenerated from ammonium chloride by reacting it with residual lime (calcium hydroxide) from carbon dioxide production. This efficient process recycled ammonia, utilizing only brine and limestone, and producing calcium chloride as the sole waste byproduct. By 1900, the Solvay process accounted for 90% of sodium carbonate production.<br />
+      <br />
+      <strong>Hou&#39;s Process: </strong>Developed in the 1930s by Chinese chemist Hou Debang, this process involved pumping carbon dioxide from steam reforming through a saturated solution of sodium chloride and ammonia. This generated sodium bicarbonate, collected as a low-solubility precipitate, then heated to obtain pure sodium carbonate, similar to the final step in the Solvay process. Further introduction of sodium chloride and ammonia to the solution of ammonium and sodium chlorides allowed selective precipitation of ammonium chloride in a sodium chloride solution, owing to temperature-dependent solubility differences and the common-ion effect.<br />
+      <br />
+      Named &quot;Coupled Manufacturing Alkali Method&quot; in Chinese, Hou&#39;s process, linked with the Haber process, enhances atom efficiency by eliminating calcium chloride production, as ammonia regeneration becomes unnecessary. The resulting byproduct, ammonium chloride, can be marketed as a fertilizer.</p>
     `,
     application: `
-      <h6 class="font-bold text-[#17234d] mt-4 mb-2">Soap & Detergent</h6>
-      <p>Primarily used in the saponification process to manufacture soap and detergents.</p>
-      <h6 class="font-bold text-[#17234d] mt-4 mb-2">Water Treatment</h6>
-      <p>Used to control water acidity and help remove heavy metals from water.</p>
+      <p><strong>Detergent Industry</strong></p>
+
+      <p>It is used as a water softener in laundry detergents. Soda ash competes with ionic magnesium and calcium in hard water and prevents them from combining with the detergent being used. If you do not use washing soda, you need an extra detergent to soak up magnesium and calcium ions. In the detergent part of the washing shop called washing soda or Sal soda, it can effectively remove oil, grease, and alcohol stains.<br />
+      Medium or lighter soda ash is commonly used in detergents. They are used as builders in the formulation of soaps, detergents, and other cleaning compounds to maximize the detergency of cleaning media. Soda ash also aids in agglomeration by carrying the surfactant and providing the optimum pH of the detergent.<br />
+      Soda ash is an important part of a large number of domestic formulations, including soap, refined powder, soaking, and washing powder.<br />
+      <br />
+      <strong>Glass Industry</strong></p>
+
+      <p>The glass industry is a large consumer sector of soda ash. Soda Ash is used as the raw material to make the most common type of glass, soda-lime silica glass, generally used in the flat glass (automotive and construction), glass container (food and drink), and many other glass industries.<br />
+      <br />
+      <strong>Textile Industry</strong></p>
+
+      <p>It is used as a water softener for printing and dyeing in the textile industry<br />
+      <br />
+      <strong>Buffer Industry</strong></p>
+
+      <p>It is used as a buffering agent, neutralize and dough improver, it can be used for pastry and noodle food, and can be used appropriately according to production needs.</p>
     `,
     technicalDocuments: [
-      { type: 'TDS', grade: '99%', origin: 'Indonesia', file: '#' },
       { type: 'MSDS', grade: '-', origin: '-', file: '#' }
     ]
   },
