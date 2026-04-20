@@ -185,7 +185,7 @@ export default function ProductDetailPage({ params }) {
           </div>
         </div>
         {/* Social Share Section */}
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 pt-10 border-t border-gray-100">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 pt-15">
           <span className="text-xl font-semibold text-[var(--color-text-dark)]">Share This Product:</span>
           <div className="flex flex-wrap gap-3">
             {/* Facebook */}

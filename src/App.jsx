@@ -6,6 +6,8 @@ import ProductsPage from './pages/Products';
 import ProductDetailPage from './pages/Products/ProductDetail';
 import OurLocationPage from './pages/OurLocation';
 import ContactUsPage from './pages/ContactUs';
+import MarketInsightPage from './pages/MarketInsight';
+import MarketInsightDetailPage from './pages/MarketInsight/MarketInsightDetail';
 
 /**
  * Custom Route Matcher
@@ -38,6 +40,8 @@ const ROUTES = [
   { path: '/products/:slug', component: <ProductDetailPage /> },
   { path: '/our-location', component: <OurLocationPage /> },
   { path: '/contact-us',   component: <ContactUsPage /> },
+  { path: '/market-insights', component: <MarketInsightPage /> },
+  { path: '/market-insights/:slug', component: <MarketInsightDetailPage /> },
 ];
 
 function NotFoundPage() {
