@@ -8,6 +8,8 @@ import OurLocationPage from './pages/OurLocation';
 import ContactUsPage from './pages/ContactUs';
 import MarketInsightPage from './pages/MarketInsight';
 import MarketInsightDetailPage from './pages/MarketInsight/MarketInsightDetail';
+import SupportPage from './pages/Support';
+import FaqPage from './pages/Faq';
 
 /**
  * Custom Route Matcher
@@ -34,14 +36,16 @@ function matchRoute(routePath, currentPath) {
  * Route configuration.
  */
 const ROUTES = [
-  { path: '/',           component: <HomePage /> },
-  { path: '/about-us',   component: <AboutUsPage /> },
-  { path: '/products',   component: <ProductsPage /> },
+  { path: '/', component: <HomePage /> },
+  { path: '/about-us', component: <AboutUsPage /> },
+  { path: '/products', component: <ProductsPage /> },
   { path: '/products/:slug', component: <ProductDetailPage /> },
   { path: '/our-location', component: <OurLocationPage /> },
-  { path: '/contact-us',   component: <ContactUsPage /> },
+  { path: '/contact-us', component: <ContactUsPage /> },
   { path: '/market-insights', component: <MarketInsightPage /> },
   { path: '/market-insights/:slug', component: <MarketInsightDetailPage /> },
+  { path: '/customer-support', component: <SupportPage /> },
+  { path: '/faq', component: <FaqPage /> },
 ];
 
 function NotFoundPage() {
@@ -81,8 +85,8 @@ export default function App() {
     return false;
   });
 
-  const pageContent = matchedRoute 
-    ? React.cloneElement(matchedRoute.component, { params: matchedParams }) 
+  const pageContent = matchedRoute
+    ? React.cloneElement(matchedRoute.component, { params: matchedParams })
     : <NotFoundPage />;
 
   return (

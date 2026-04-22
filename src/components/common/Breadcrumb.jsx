@@ -1,15 +1,9 @@
 import React from 'react';
 import { AngleRightIcon } from '../icons';
 
-/**
- * Breadcrumb
- * Common navigation helper component.
- * 
- * @param {Array} items - Array of breadcrumb objects: { label: string, href: string }.
- */
 export default function Breadcrumb({ items = [] }) {
   return (
-    <div className="hidden md:block bg-[#fefaef] py-3 border-b border-gray-100">
+    <div className="hidden md:block bg-[#fefaef] py-3">
       <div className="container">
         <nav className="flex items-center gap-2 text-sm font-medium">
           <a href="/" className="text-[var(--color-text-dark)] transition-colors">Home</a>
